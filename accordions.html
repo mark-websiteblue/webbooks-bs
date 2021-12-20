@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=1.2">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    
+    <title>Webbook - Accordions</title>
+
+    <style>
+        /* hide scrollbar but allow scrolling */
+        body {
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-y: scroll; 
+        }
+
+        body::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+        }
+    </style>
+  </head>
+  <body>
+
+    <h1 class="p-5 text-uppercase fw-bold text-white bg-primary">Accordions</h1>
+
+    <!-- SECTION CONTENT BLOCKS  -->
+
+    <section class="dwb-section dsgnly-selectable dsgnly-hoverable dsgnly-draggable dsgnly-copyable dsgnly-removable">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto">
+                    <h2 class="text-center mb-5 dsgnly-color-bodytext">FAQ</h2>
+                </div>
+            </div>            
+            <div class="row justify-content-md-center">
+                <div class="col col-md-12">
+                    <div class="accordion" id="myAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne"><button type="button" class="accordion-button collapsed fw-bold p-5 fs-5 dsgnly-color-bodytext" data-bs-toggle="collapse" data-bs-target="#collapseOne">Do you help with relocation?</button></h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                <div class="card card-body border-0 p-5">
+                                    <p class="text-sm dsgnly-color-bodytext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatem sunt distinctio dolor aut rem rerum, odio, voluptatum necessitatibus quis ea est ab odit quae! Dolor libero deleniti consequuntur reiciendis nobis itaque odit maiores sequi earum unde, impedit voluptatum enim?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo"><button type="button" class="accordion-button collapsed fw-bold p-5 fs-5 dsgnly-color-bodytext" data-bs-toggle="collapse" data-bs-target="#collapseTwo">How does your hiring process work?</button></h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                <div class="card card-body border-0 p-5">
+                                    <p class="text-sm dsgnly-color-bodytext">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aspernatur iusto quas non velit, culpa modi? Eligendi enim, vitae corporis sapiente nihil nostrum obcaecati officiis ipsa ullam eius asperiores libero.<br /><br />
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus culpa, ad necessitatibus esse asperiores voluptate sapiente magnam earum facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree"><button type="button" class="accordion-button collapsed fw-bold p-5 fs-5 dsgnly-color-bodytext" data-bs-toggle="collapse" data-bs-target="#collapseThree">Do you have an internship program?</button></h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                <div class="card card-body border-0 p-5">
+                                    <p class="text-sm dsgnly-color-bodytext">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aspernatur iusto quas non velit, culpa modi? Eligendi enim, vitae corporis sapiente nihil nostrum obcaecati officiis ipsa ullam eius asperiores libero.<br /><br />
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus culpa, ad necessitatibus esse asperiores voluptate sapiente magnam earum facilis.
+                                      </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour"><button type="button" class="accordion-button collapsed fw-bold p-5 fs-5 dsgnly-color-bodytext" data-bs-toggle="collapse" data-bs-target="#collapseFour">What are your working hours?</button></h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                <div class="card card-body border-0 p-5">
+                                    <p class="text-sm dsgnly-color-bodytext">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati odio vitae delectus distinctio reiciendis cum ab ex excepturi ratione.<br /><br />
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit architecto id atque, numquam non?<br /><br />
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt repellat tempora atque non, minima quis saepe eos hic, voluptate libero necessitatibus natus architecto ratione. Tempore eum omnis accusamus nisi enim?
+                                      </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/assets/js/jquery/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+
+    $(function () {
+
+    });
+
+  </script>
+
+
+  </body>
+</html>

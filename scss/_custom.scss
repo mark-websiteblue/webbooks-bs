@@ -1,0 +1,207 @@
+
+
+$font-family-sans-serif: 'Montserrat', Helvetica, Arial, sans-serif;
+$line-height-base:            1.5;
+
+
+$body-color: #000000;
+$gray-100:#E1E1E1;
+$gray-101: #EBEBED;
+$webbook: #0f84cd;
+$webbook-hover: #000000;
+$webbook-press: #000000;
+$black: #000000;
+$webbook-50: #FFF0EE;
+$webbook-50-hover: #FFECEB;
+$webbook-50-press: #FFEBE6;
+$webbook-100: #FFEBE6;
+$webbook-100-hover: #FDE6E0;
+$webbook-100-press: #FDE6E0;
+
+$display-font-sizes: (
+  1: 3.5rem,
+  2: 2.5rem,
+  3: 2.26rem,
+  4: 2rem,
+  5: 1.5rem,
+  6: 1.25rem
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer * .75,
+  4: $spacer * 1,
+  5: $spacer * 1.30
+);
+
+$h1-font-size:  2.25rem;
+$h2-font-size:  2rem;
+$h3-font-size:  1.75rem;
+$h4-font-size:  1.5rem;
+$h5-font-size:  1.25rem;
+$h6-font-size:  1.125rem;
+
+$input-btn-font-size:    1.1rem;
+$btn-font-weight: bold;
+$input-btn-padding-y-lg:   0.875rem;
+$input-btn-padding-x-lg:   1.875rem;
+
+$input-btn-focus-box-shadow: none;
+
+$container-max-widths: (
+  lg: 971px,
+  xl: 972px
+);
+
+$font-weight-lighter:         100;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            500;
+$font-weight-bolder:          700;
+
+// import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_utilities";
+@import "../node_modules/bootstrap/scss/_mixins";
+
+
+$theme-colors: (
+  "primary":    #0f84cd,
+  "secondary":  #cd0f84,
+  "success":   	#0f25cd
+);
+
+$custom-theme-colors: (
+    "wb": $webbook,
+    "tertiary": #84cd0f,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+// $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+// $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+
+ 
+
+// Import Bootrap 5.1
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+form {
+  margin: 0;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {  
+    /* hide scrollbar but allow scrolling when viewport is on mobile size*/
+    body {
+      -ms-overflow-style: none; /* for Internet Explorer, Edge */
+      scrollbar-width: none; /* for Firefox */
+      overflow-y: scroll; 
+    }
+
+    body::-webkit-scrollbar {
+      display: none; /* for Chrome, Safari, and Opera */
+    }
+}
+
+.btn:focus,
+.form-control:focus,
+.dropdown-toggle:focus,
+.form-check-input:focus,
+.form-select:focus {
+  box-shadow: none !important;
+}
+
+
+.img-object-fit-cover {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  @media only screen and (max-width: 767px) {  // Iphone 8 plus and Iphone 6
+    height: 35vh;
+    width: 100vw;
+    border-bottom:1px #eaedf3 solid;
+    transform: translateX(-16px);
+  }
+
+}
+
+.break {
+  display: none;
+  flex-basis: 100%;
+  height: 0;
+  @media only screen and (max-device-width: 667px) {
+    display: block;
+  }
+}
+
+p.readmore {
+  max-height: 59px;
+  overflow: hidden;
+  mask-image: linear-gradient(180deg, #6C6C6C 80%, transparent);
+  -webkit-mask-image: linear-gradient(
+  180deg, #6C6C6C 80%, transparent);
+  transition: max-height 0.15s ease-out;
+  @media only screen and (max-width: 991px) {   // Ipad
+    max-height: 10vw;
+  }
+
+  @media only screen and (max-width: 667px) {  // Iphone 8 plus and Iphone 6
+    max-height: 40vw;
+  }
+
+  @media only screen and (max-width: 320px) { // Iphone 5 
+    max-height: 30vw;
+  } 
+}
+
+.btn-readmore {
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &.btn-left-edge {
+    margin-left: -13px;
+  }
+  &.btn-right-edge {
+    margin-right: -13px;
+  }
+
+  &.btn-sm {
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    &.btn-left-edge {
+      margin-left: -8px;
+    }
+    &.btn-right-edge {
+      margin-right: -8px;
+    }
+
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+.btn-link {
+  text-decoration: none;
+  text-underline-offset: 2px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
