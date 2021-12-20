@@ -35,7 +35,7 @@
 
     <!-- SECTION CONTENT full-width image bleed - 2 -->
     <section class="dwb-section dsgnly-selectable dsgnly-hoverable dsgnly-draggable dsgnly-copyable dsgnly-removable">
-        <div class="full-bleed-container mb-6">
+        <div class="full-bleed-half-height-container   mb-6">
             <div class="container p-0">            
                 <div class="row g-0 justify-content-md-center h-100">
                     <div class="col col-12 clearfix">
@@ -107,17 +107,7 @@
     <script type="text/javascript">
 
     $(function () {
-        $(".btn-readmore").click(function(e) {
-            e.preventDefault();
-            var $readMoreBtn = $(e.currentTarget);
-            var elemTxt = $readMoreBtn.text();
-            var $paragraph = $readMoreBtn.prevAll("p");
-            $paragraph.toggleClass("readmore");
 
-            var btnLabel = (elemTxt == "Read more") ? "Read less" : "Read more"
-            $readMoreBtn.text(btnLabel);
-
-        });
     });
 
   </script>

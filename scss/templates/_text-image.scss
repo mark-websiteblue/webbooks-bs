@@ -281,4 +281,60 @@
 	}
 }
 
+.full-bleed-half-height-container {
+    min-height: 537px;
+    height: 100%;
+    background-color: unset;
+    overflow: hidden;
+    position: relative;
 
+    .full-bleed-child {
+      position: absolute;
+      height: 100%;
+      width: 100vw; // laptop 
+      left: 0px;
+      z-index: 1;
+
+      @media (max-width:991px) { //ipad
+          padding-top: 0;
+          padding-bottom: 0;
+          height: 47vh;
+          overflow: hidden;
+          position: initial;
+          width: initial;
+          left: initial;
+          z-index:initial;
+      }
+
+      img {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+        margin-left: 0;
+        @media (max-width:991px) {
+            padding-left: 0;
+            padding-top: 0;
+            object-fit: cover;
+            height: 100%;
+        }
+        @media (max-width: 767px) {
+          transform: none;
+        }
+      }
+    }
+}
+
+
+.min-h-280 {
+	min-height: 288px!important;
+	@media (max-width: 767px) {
+		min-height: initial;
+	}
+}
+
+.min-h-100 {
+	min-height: 100px!important;
+	@media (max-width: 767px) {
+		min-height: initial;
+	}
+}
