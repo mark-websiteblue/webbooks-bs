@@ -1,0 +1,29 @@
+img.agent-avatar {
+    display: inline-block;
+    border: 1px #ededed solid;
+    padding: 0;
+    object-fit: cover;
+    object-position: top;
+    height: 112px;
+    width: 112px;
+    @media only screen and (max-width: 667px) {  
+        height: 150px;
+        width: 150px;
+    }
+}
+
+ul.agent-contact-list {
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    li {
+        border: 0;
+        flex: 0 0 auto;
+        width: auto;
+        padding-left: 0;
+
+        span, a {
+            word-break: break-all;
+        }
+    }
+}
