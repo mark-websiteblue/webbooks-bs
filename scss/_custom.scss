@@ -86,8 +86,15 @@ $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
 // $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 // $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
+// $i will loop through up to 150 and create classes up to 150. https://is.gd/cgL4Yp
+$spacer: 1rem;
+$spacers: ( 0:0);
+@for $i from 1 through 150 {
+  $spacers: map-merge($spacers, (
+  $i: ($i * $spacer)
+  ));
+}
 
- 
 
 // Import Bootrap 5.1
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -130,13 +137,23 @@ form {
   height: auto;
   display: block;
   @media only screen and (max-width: 767px) {  // Iphone 8 plus and Iphone 6
-    height: 35vh;
+    height: 35vh!important;
     width: 100vw;
     border-bottom:1px #eaedf3 solid;
-    transform: translateX(-16px);
+    transform: translateX(-12px);
   }
-
 }
+
+.h-lg-100px {
+  height: 100px;
+  @media only screen and (max-width: 767px) {  // Iphone 8 plus and Iphone 6
+    height: initial;
+  }
+}
+
+
+
+
 
 .break {
   display: none;
@@ -155,6 +172,10 @@ form {
   font-size: 0.75rem !important;
 }
 
+
+.mb-6 {
+  margin-bottom: 11rem;
+}
 p.readmore {
   max-height: 59px;
   overflow: hidden;

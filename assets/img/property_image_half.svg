@@ -1,0 +1,16 @@
+<svg id="Picture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="801" viewBox="0 0 700 801">
+  <defs>
+    <pattern id="pattern" width="1" height="1" viewBox="6.795 27.429 700 800.999">
+      <image preserveAspectRatio="xMidYMid slice" width="800.999" height="800.999" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAABVJREFUOBFjYBgFoyEwGgKjIQAJAQAEEAABvmNTIgAAAABJRU5ErkJggg=="/>
+    </pattern>
+  </defs>
+  <g id="Picture_Big" data-name="Picture/Big">
+    <rect id="Base" width="700" height="797.966" fill="#f6f7fa"/>
+    <rect id="Image" width="700" height="800.999" transform="translate(0 0.001)" fill="url(#pattern)"/>
+    <g id="ic-real-estate-search-house" transform="translate(312.273 363.037)">
+      <path id="Path_19" data-name="Path 19" d="M77.4,57.735V32.325a.792.792,0,0,0,0-.566L40.455,2.2a.754.754,0,0,0-.943,0L2.415,31.759a.792.792,0,0,0-.264.566L2,69.159A7.54,7.54,0,0,0,9.54,76.7l38.531.264" transform="translate(-2 -2.036)" fill="none" stroke="#cad1e1" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.5" fill-rule="evenodd"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="18.851" cy="18.851" r="18.851" transform="translate(18.851 22.484)" fill="none" stroke="#cad1e1" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="7.5"/>
+      <line id="Line_1" data-name="Line 1" x2="15.42" y2="14.817" transform="translate(48.672 56.679)" fill="none" stroke="#cad1e1" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="7.5"/>
+    </g>
+  </g>
+</svg>

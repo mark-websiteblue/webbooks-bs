@@ -16,10 +16,9 @@
 					.outer-wrapper {
 						position: relative;
 						width: 100%;
-						height: 100%;
 						overflow: visible;
-						min-height: 450px;
-            margin-bottom: 0;
+						height: 450px;
+            			margin-bottom: 0;
 
 						.image-wrapper {
 							width: calc(51vw);
@@ -75,8 +74,8 @@
 					&:first-child {
 
 						.outer-wrapper {
-							min-height: 409px;
-              margin-bottom: 30px;
+							height: 35vh !important;
+              				margin-bottom: 30px;
 
 							.image-wrapper {
 								// width: 100vw;
@@ -158,13 +157,12 @@
 					.outer-wrapper {
 						position: relative;
 						width: 100%;
-						height: 100%;
 						overflow: visible;
-						min-height: 450px;
-            margin-bottom: 0;
+						height: 450px;
+            			margin-bottom: 0;
 
 						.image-wrapper {
-              width: calc(50vw - 9px);
+              				width: calc(50vw - 9px);
 							overflow: hidden;
 							height: 100%;
 							position: absolute;
@@ -215,10 +213,10 @@
 
 				@media only screen and (max-width: 991px) {
 					&:first-child {
-            order: initial;
+            		order: initial;
 						.outer-wrapper {
-							min-height: 409px;
-              margin-bottom: 30px;
+							height: 35vh !important;
+              				margin-bottom: 30px;
 
 							.image-wrapper {
 								// width: 100vw;
@@ -325,6 +323,78 @@
 }
 
 
+.full-bleed-half-height-container-variation-1 {
+    min-height: 646px;
+    height: 100%;
+    background-color: unset;
+    overflow: hidden;
+    position: relative;
+	display: flex;
+	align-items: flex-end;
+	@media (max-width:991px) { //ipad
+		min-height: 55vh;
+	}
+
+    .full-bleed-child {
+      position: absolute;
+      height: 100%;
+      width: 100vw; // laptop 
+      left: 0px;
+	  top: 0;
+      z-index: 1;
+
+
+      img {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+        margin-left: 0;
+        @media (max-width:991px) {
+            padding-left: 0;
+            padding-top: 0;
+			height: 100%!important;
+			transform: none;
+        }
+        @media (max-width: 767px) {
+
+        }
+      }
+    }
+
+	> .container {
+		> .row {
+			> .col {
+				&:first-child {
+
+					.black-overlay {
+						content: "";
+						position: absolute;
+						z-index: 1;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						height: 64%;
+						display: inline-block;
+						background: linear-gradient(180deg, #ffffff00 10%, #00060d 104%); 
+					}	
+				}
+
+				&:nth-child(2) {
+					z-index: 1;
+					color: var(--bs-white);
+					padding: 0;
+					@media (max-width:991px) {
+						padding: 0 2rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.text-shadow-dark {
+	text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 3px 1px 5px #000000;
+}
 .min-h-280 {
 	min-height: 288px!important;
 	@media (max-width: 767px) {

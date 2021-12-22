@@ -1,0 +1,57 @@
+.banner-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    display: block;
+    max-height: 96px;
+    @media only screen and (max-width: 767px) {  // Iphone 8 plus and Iphone 6
+      height: 35vh;
+      width: 100vw;
+      border-bottom:1px #eaedf3 solid;
+      transform: translateX(-16px);
+    }
+}
+
+.property-features-list {
+    border: 1px var( --bs-gray-500) solid;
+    padding: 8px;   
+    display: inline-flex;
+    margin-bottom: 1.5rem;
+    li {
+        border: 0;
+        padding: 0.5rem .25rem;
+        > .badge {
+            font-size: 14px;
+            color: var(--bs-body-color);
+            background-color: #ffffff!important;
+            font-weight: 300!important;
+            &:before {
+                content: "\f00d";
+                font-weight: 900;
+                font-family: "Font Awesome 5 Free";
+                -webkit-font-smoothing: antialiased;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+                margin-right: 6px;
+            }
+        }
+
+    }
+}
+
+.mb-lg-10 {
+    margin-bottom: 100px;
+    @media only screen and (max-width: 767px) {  // Iphone 8 plus and Iphone 6
+      margin-bottom: revert;
+    }
+  }
+  
+  .h-lg-645 {
+    height: 645px!important;
+    @media only screen and (max-width: 767px) {  // Iphone 8 plus and Iphone 6
+      margin-bottom: revert;
+    }
+  }
