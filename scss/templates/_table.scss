@@ -1,0 +1,42 @@
+.table-scrollable {
+	overflow-x: auto;
+	max-width: initial;
+	box-shadow: none;
+	@media (max-width:991px) {
+		box-shadow: inset 0 0 5px rgba(150, 150 ,150,0.35);
+	}
+	margin: auto;
+
+	table {
+		min-width: 100%;
+		@media (max-width:991px) {
+			min-width: 890px;
+		}
+
+		th:first-child,
+		td:first-child {
+		  position: sticky;
+		  left: 0;
+		  background-color: #fff;
+		  box-shadow: none;
+		  @media (max-width:991px) {
+			left: -1px;
+			box-shadow: inset -2px 0px 6px 0px rgb(150 150 150 / 35%);		
+		  }
+		}
+
+		>tbody, >tfoot, >thead {
+			>tr {
+				>td {
+					padding: 12px;
+				}
+				>th {
+					padding: 12px;
+				}
+			}
+		}
+				  
+	}
+
+
+}
