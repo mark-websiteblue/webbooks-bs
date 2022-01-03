@@ -1,0 +1,157 @@
+form.wb-form-style-1 {
+  * {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+  }
+  .form-label {
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+    .required {
+      color: #95a1bb;
+      font-size: .563rem;
+      line-height: 20px;
+      margin-left: 2px;
+    }
+  }
+  .form-floating {
+    > textarea.form-control {
+        padding-top: 1rem;
+        min-height: 150px;
+        width: 100%;
+        &:focus {
+          padding-top: 1rem;
+        }
+    }
+
+    .form-check {
+        margin-bottom: 9px;
+
+        .custom-radio {
+            &[type="radio"] {
+                border: 2px #182b4b solid;
+                &:checked {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='%230f84cd'/%3e%3c/svg%3e");
+                    border-color: var(--bs-primary);
+                    background-color: #fff;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 2px;
+        }
+    }
+
+  }
+
+  .form-control {
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: var(--bs-light);
+      opacity: .30;  
+    }
+  }
+
+  .btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1rem;
+  }
+
+
+
+}
+
+
+// select2 customization
+
+.form-select.select2-hidden-accessible {
+	height: 30px !important;
+}	
+.select2-container--default {
+	.selection {
+		.select2-selection--single {
+			height: auto !important;
+			min-height: 33px;
+			border: 1px solid #ced4da;
+			.select2-selection__clear {
+				margin-right: 35px !important;
+				margin-top: 6px;
+				> span {
+					font-size: 24px;
+				}
+			}
+
+			.select2-selection__rendered {
+				padding: 6px 12px;
+				line-height: 20px;
+
+				.select2-selection__placeholder {
+					color: #ced4da!important;
+				}
+			}
+			.select2-selection__arrow {
+				top: 4px;
+				right: 12px;
+				> b {
+					border-color: transparent !important;
+					margin-left: -9px !important;
+					margin-top: -11px !important;
+					font-weight: 900;
+					font-family: "Font Awesome 5 Free";
+					-webkit-font-smoothing: antialiased;
+					display: inline-block;
+					font-style: normal;
+					font-variant: normal;
+					text-rendering: auto;
+					line-height: 1;
+					color: #000;
+
+					&::before {
+						content: "\f078";
+					}
+				}
+			}
+		}
+	}
+
+	&.select2-container--open {
+		.selection {
+			.select2-selection--single {
+				.select2-selection__arrow {
+					> b {
+						top: 18px;
+						right: 5px;
+
+						&::before {
+							content: "\f077";
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.select2-dropdown {
+		.select2-search {
+			input.select2-search__field {
+				&:focus {
+					outline: 0 none;
+				}
+			}
+		}
+	}
+}
+
+// select2 customization - END
+
+
+// jquery-datetimepicker 
+.icn-datetime-picker {
+    font-weight: 600 !important;
+    transform: translate(-33px, -27px);
+    position: absolute;
+    right: 0;
+    font-size: 1rem!important;
+}
+// jquery-datetimepicker  - END

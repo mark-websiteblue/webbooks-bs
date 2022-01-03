@@ -27,15 +27,14 @@ $display-font-sizes: (
   6: 1.25rem
 );
 
-$spacer: 1rem;
-$spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer * .75,
-  4: $spacer * 1,
-  5: $spacer * 1.30
-);
+// extend bootstrap default 1-5 spacer to 150 https://is.gd/cgL4Yp
+$spacer: 0.5rem;
+$spacers: (0:0);
+@for $i from 1 through 150 {
+  $spacers: map-merge($spacers, (
+    $i: ($i * $spacer ,),
+  ));
+}
 
 $h1-font-size:  2.25rem;
 $h2-font-size:  2rem;
@@ -86,14 +85,9 @@ $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
 // $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 // $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
-// $i will loop through up to 150 and create classes up to 150. https://is.gd/cgL4Yp
-$spacer: 1rem;
-$spacers: ( 0:0);
-@for $i from 1 through 150 {
-  $spacers: map-merge($spacers, (
-  $i: ($i * $spacer)
-  ));
-}
+
+$btn-padding-y:               12px;
+$btn-padding-x:              20px;
 
 
 // Import Bootrap 5.1
